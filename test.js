@@ -15,8 +15,6 @@ tape('should respond hello', (t) => {
   })
 })
 
-<<<<<<< HEAD
-=======
 tape('should respond b64', (t) => {
   jsonist.get(`${urlBase}/b64/hello`, (err, body) => {
     if (err) t.error(err)
@@ -36,7 +34,6 @@ tape('should respond user-agent', (t) => {
   })
 })
 
->>>>>>> 5b2a53e (feat: add user-agent endpoint)
 tape('cleanup', function (t) {
   server.close()
   t.end()
